@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="to-do-list.css">
+    <link rel="icon" href="red-remove.png" type="images/x-icon">
+</head>
+<body>
+    <div class="container">
+
+        <video loop autoplay muted plays-inline class="back-video">
+            <source src="back-video.mp4" type="video/mp4">
+        </video>
+        <div class="header">
+            <img src="icons8-note-100.png" style="width: 30px; margin-right: 15px;">
+        <h1>To-Do-List</h1>
+        </div>
+
+        <div class="field-box">
+            <div class="main-field">
+                <input type="text" placeholder="Text your list !" id="input-filed">
+                <button id="btn" type="submit">save</button>
+            </div>
+
+            <div class="list-field" id="list-field">
+                <h3 id="count">Your have 0 list</h3>
+                <ul id="list-item">
+                    <!-- li write first and check this -->
+                    <!-- <li class="item"><p>domo</p><img  src="remove.png" id="icon" onclick="remove(event)" ></li> -->
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="to-do-list.js"></script>
+</body>
+</html>

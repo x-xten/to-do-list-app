@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: -webkit-linear-gradient(rgba(72, 69, 69, 0.473),rgba(123, 118, 118, 0.3));
+}
+.header{
+    background-image:linear-gradient(to right, #ade4db,#fde2f3) ;
+    width: 100%;
+    height: 15vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0.8;
+    
+}
+.header h1{
+    position: relative;
+    cursor: pointer;
+    /* color: ghostwhite; */
+    color:#0b2447 ;
+}
+.header h1::after{
+    content: '';
+    background-color: black;
+    height: 3px;
+    border-radius: 25px;
+    width: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.5s;
+}
+.header h1:hover::after{
+width: 100%;
+}
+.field-box{
+    width: 100%;
+    position: absolute;
+    top:25%;
+    padding: 5px;
+}
+.main-field{
+    width:45%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.459),rgba(255, 255, 255, 0.386));
+}
+.main-field input[type='text']{
+    width: 85%;
+    padding: 10px 5px;
+    border-radius: 3px;
+    border: none;
+}
+.list-field{
+    width:45%;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 8px;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.459),rgba(255, 255, 255, 0.386));
+}
+.item{
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item img{
+    width: 20px;
+    cursor: pointer;
+}
+#btn{
+padding: 0 20px;
+border: none;
+background-color: black;
+color: ghostwhite;
+font-weight: 700;
+margin-left: 5px;
+border-radius: 10px;
+cursor: pointer;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
